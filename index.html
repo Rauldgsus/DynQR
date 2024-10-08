@@ -3,102 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <style>
-      body {
-        background-color: black;
-        text-align: center;
-      }
-    .loader {
-        height: 5px;
-        width: 5px;
-        color: #fff;
-        box-shadow: -10px -10px 0 5px,
-                    -10px -10px 0 5px,
-                    -10px -10px 0 5px,
-                    -10px -10px 0 5px;
-        animation: loader-38 6s infinite;
-      }
+   <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-      @keyframes loader-38 {
-        0% {
-          box-shadow: -10px -10px 0 5px,
-                      -10px -10px 0 5px,
-                      -10px -10px 0 5px,
-                      -10px -10px 0 5px;
-        }
-        8.33% {
-          box-shadow: -10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px -10px 0 5px;
-        }
-        16.66% {
-          box-shadow: -10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      10px 10px 0 5px;
-        }
-        24.99% {
-          box-shadow: -10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        33.32% {
-          box-shadow: -10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px -10px 0 5px;
-        }
-        41.65% {
-          box-shadow: 10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      10px -10px 0 5px;
-        }
-        49.98% {
-          box-shadow: 10px 10px 0 5px,
-                    10px 10px 0 5px,
-                    10px 10px 0 5px,
-                    10px 10px 0 5px;
-        }
-        58.31% {
-          box-shadow: -10px 10px 0 5px,
-                      -10px 10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        66.64% {
-          box-shadow: -10px -10px 0 5px,
-                      -10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        74.97% {
-          box-shadow: -10px -10px 0 5px,
-                      10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        83.3% {
-          box-shadow: -10px -10px 0 5px,
-                      10px 10px 0 5px,
-                      10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        91.63% {
-          box-shadow: -10px -10px 0 5px,
-                      -10px 10px 0 5px,
-                      -10px 10px 0 5px,
-                      -10px 10px 0 5px;
-        }
-        100% {
-          box-shadow: -10px -10px 0 5px,
-                      -10px -10px 0 5px,
-                      -10px -10px 0 5px,
-                      -10px -10px 0 5px;
-        }
+    .spinner {
+      width: 150px;
+      height: 150px;
+      background-image: url('https://i.postimg.cc/7Ys3BkhM/AQRT-removebg-preview.png'); /* Ruta de tu imagen */
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: spin-scale 3s linear infinite;
+    }
+
+    @keyframes spin-scale {
+      0% {
+        transform: rotate(0deg) scale(1);
       }
+      50% {
+        transform: rotate(180deg) scale(0.8);
+      }
+      100% {
+        transform: rotate(360deg) scale(3);
+      }
+       50% {
+        transform: rotate(360deg) scale(0.8);
+      }
+    }
 
     
     
@@ -126,7 +64,7 @@
 
   </script>
   
-<span class="loader"></span>
+<div class="spinner"></div>
   
   
 </body>
